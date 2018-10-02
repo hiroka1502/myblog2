@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+    def new_method
+    end
 
     def index
         @posts = Post.all.order(created_at: 'desc')
